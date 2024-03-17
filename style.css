@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,100&family=Playfair+Display&family=Playpen+Sans:wght@300&family=Poppins:wght@600&family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("./assets/image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90vh;
+    position: relative;
+}
+
+nav {
+    height: 80px;
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+nav img {
+    width: 120px;
+    top: 5px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+div button {
+    position: relative;
+    z-index: 10;
+}
+
+.main-box {
+    opacity: 0.60;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.hero {
+    display: flex;
+    color: white;
+    height: 100%;
+    text-align: center;
+    width: 75vw;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    gap: 13px;
+    padding: 10px;
+    position: relative;
+}
+
+.hero> :first-child {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.hero> :nth-child(2) {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero> :nth-child(3) {
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.sign-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.eng-btn {
+    /* background: transparent; */
+    cursor: pointer;
+    background-color: rgba(36, 35, 35, 0.34);
+    padding: 5px 18px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.547);
+}
+
+.input-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.started {
+    font-family: 'Poppins', sans-serif;
+    /* padding: 15px 15px; */
+    padding: 10px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    border: none;
+    margin: 0px 0px 0px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+div input {
+    padding: 6px;
+    font-size: 18px;
+    width: 35%;
+    height: 30px;
+    font-weight: 400;
+    background-color: rgba(29, 28, 28, 0.688);
+    color: white;
+    border-radius: 2px;
+    border: 0.5px solid rgba(255, 255, 255, 0.411);
+}
+
+input::placeholder {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.791);
+    font-size: 17px;
+}
+
+.saprate {
+    background-color: rgba(128, 128, 128, 0.314);
+    height: 7px;
+}
+
+.section {
+    width: 70vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.secText> :first-child {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.secText>:nth-child(2) {
+    font-family: 'Roboto Slab', serif;
+}
+
+.secImg img {
+    width: 500px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    width: 430px;
+    right: 2px;
+    top: 50px;
+}
+
+.third video {
+    width: 320px;
+    right: 90px;
+    top: 31px;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.faq-part {
+    color: white;
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq {
+    background-color: rgba(128, 128, 128, 0.274);
+    padding: 10px 15px;
+    width: 75vw;
+    margin: auto;
+    /* border-bottom:2px solid white; */
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.answer p {
+    line-height: 25px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.active {
+    max-height: 340px;
+    animation: fads 0.4s ease-in-out;
+}
+
+/* .material-symbols-outlined{
+    transform: rotate(45deg);
+} */
+
+@keyframes fads {
+    from {
+        opacity: 0.1;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* .answer.active span{
+    transform: rotate(180deg);
+} */
+
+
+.links {
+    width: 100%;
+    display: inline-flex;
+    height: 50vh;
+}
+
+.links ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    margin: auto;
+    padding: 10px 10px;
+    list-style-type: none;
+}
+
+.tags {
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.tags a {
+    color: white;
+    margin: 8px;
+    padding: 10px;
+    color: gray;
+}
+
+
+
+
+.any-que {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    color: white;
+}
+
+
+
+@media only screen and (max-width:700px) {
+    nav {
+        width: 90vw;
+        height: 60px;
+    }
+
+    .main {
+        height: 60vh;
+    }
+
+    .hero {
+        width: 90vw;
+        gap: 0;
+        height: 85%;
+    }
+
+    .hero> :first-child {
+        font-size: 30px;
+        padding: 5px;
+        font-weight: 700;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 15px;
+        padding: 7px;
+    }
+
+    div input {
+        margin: 10px 0;
+        width: 70%;
+    }
+
+    .input-box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .started{
+        padding: 5px 10px;
+    }
+
+    .section {
+        width: 90vw;
+    }
+
+    div .secText {
+        padding: 25px 0px;
+    }
+
+    .secImg img {
+        width: 200px;
+    }
+
+    .secImg video {
+        width: 165px;
+        top: 30px;
+        right: 9px;
+    }
+
+    .secText> :first-child {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 3px 0;
+    }
+
+    .secText>:nth-child(2) {
+        font-size: 11px;
+        margin: 8px 0;
+    }
+
+    .third video {
+        width: 130px;
+        right: 37px;
+        top: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .links {
+        width: 90%;
+        display: inline-flex;
+        height: 50vh;
+    }
+
+    .links ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 6px 5px;
+    }
+    li.tags{
+        padding: 10px 8px;
+    }
+
+    .faq {
+        padding: 5px 15px;
+    }
+
+    .question {
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width:1200px) and (min-width:600px){
+    
+    .started{
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    nav {
+        width: 90vw;
+    }
+
+    .main {
+        height: 60vh;
+    }
+
+    .hero {
+        width: 80vw;
+        height: 70%;
+    }
+
+    .hero> :first-child {
+        font-size: 30px;
+        padding: 1px;
+        font-weight: 700;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 15px;
+        padding: 7px;
+    }
+
+    div input {
+        margin: 10px 0;
+        width: 70%;
+    }
+
+    .input-box {
+        display: flex;
+        /* margin: 5px; */
+        width: 100%;
+        /* height: 25px; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 80vw;
+    }
+
+    .secImg img {
+        width: 200px;
+    }
+
+    .secImg video {
+        width: 165px;
+        top: 30px;
+        right: 9px;
+    }
+
+    .secText> :first-child {
+        font-size: 16px;
+        font-weight: 900;
+        margin: 3px 0;
+    }
+
+    .secText>:nth-child(2) {
+        font-size: 11px;
+        margin: 8px 0;
+    }
+
+    .third video {
+        width: 130px;
+        right: 37px;
+        top: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .links {
+        width: 100%;
+        display: inline-flex;
+        height: 50vh;
+    }
+
+    .links ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 6px 5px;
+    }
+    .tags{
+        font-size: 22px;
+    }
+}
