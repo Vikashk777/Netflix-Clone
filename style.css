@@ -390,10 +390,13 @@ h1 {
     .links ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 6px 5px;
+        padding: 7px 0px;
+        column-gap:0;
+        row-gap:10px;
+        width: 100%;
     }
     li.tags{
-        padding: 10px 8px;
+        padding: 10px 0px;
     }
 
     .faq {
@@ -401,7 +404,7 @@ h1 {
     }
 
     .question {
-        font-size: 15px;
+        font-size: 13px;
     }
 
 }
